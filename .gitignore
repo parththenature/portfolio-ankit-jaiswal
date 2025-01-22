@@ -1,0 +1,7 @@
+node_modules/
+*.log
+*.env
+build/
+.DS_Store
+*.pid
+.idea/

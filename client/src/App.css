@@ -1,0 +1,190 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* dashboard */
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dashApp {
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: #f5f5f5; */
+  background-color: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* background: #721818; */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Ensure Bootstrap modal displays correctly */
+.modal-backdrop {
+  z-index: 1040;
+}
+
+/* Fix for any potential overflow issues */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  /* Adjust padding for mobile */
+  .container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Animation for sidebar transition */
+.sidebar-transition {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Card hover effects */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Utility classes */
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Fix for navbar shadow */
+.navbar.shadow-sm {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Custom button hover states */
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Active nav link styles */
+.nav-link.active {
+  background-color: rgba(13, 110, 253, 0.1);
+  border-radius: 4px;
+}
+
+/* Notification badge position fix */
+.position-relative .position-absolute {
+  transform: translate(-50%, -50%);
+}
+
+/* Dark theme specific styles */
+.hover-overlay:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Card hover effect */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+p {
+  color: white !important;
+}
+h6-color {
+  color: purple;
+}
+.menu-body {
+  background: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+}
+.custom-header {
+  color: #fff !important;
+}
+/* .adminH1 {
+  margin-top: 18.8rem;
+  margin-bottom: 18rem;
+  color: white;
+} */

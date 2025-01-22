@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/image.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+
+
+    <!-- Primary Meta Tags -->
+    <title>Ankit Jaiswal | Portfolio</title>
+    <meta name="title" content="Ankit Jaiswal | Portfolio" />
+    <meta
+      name="description"
+      content="Welcome to Ankit Jaiswal's portfolio. Explore my projects, skills, and professional journey as a MERN Stack Developer."
+    />
+    <meta name="author" content="Ankit Jaiswal" />
+    <meta
+      name="keywords"
+      content="Ankit Jaiswal, Portfolio, MERN Stack Developer, Web Developer, JavaScript, React, Node.js, MongoDB"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="date" content="2025-01-20" scheme="YYYY-MM-DD" />
+
+    <!-- Open Graph / Instagram -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.instagram.com/ankit_jaiswal.004" />
+    <meta property="og:title" content="Ankit Jaiswal | Portfolio" />
+    <meta
+      property="og:description"
+      content="Welcome to Ankit Jaiswal's portfolio. Explore my projects, skills, and professional journey as a MERN Stack Developer."
+    />
+    <meta
+      property="og:image"
+      content="https://yourwebsite.com/portfolio-image.png"
+    />
+    <meta property="og:image:alt" content="Ankit Jaiswal Portfolio Image" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://twitter.com/ankit2019151" />
+    <meta property="twitter:title" content="Ankit Jaiswal | Portfolio" />
+    <meta
+      property="twitter:description"
+      content="Welcome to Ankit Jaiswal's portfolio. Explore my projects, skills, and professional journey as a MERN Stack Developer."
+    />
+    <meta
+      property="twitter:image"
+      content="https://yourwebsite.com/portfolio-image.png"
+    />
+    <meta property="twitter:image:alt" content="Ankit Jaiswal Portfolio Image" />
+    <meta name="twitter:site" content="@ankit2019151" />
+
+    <!-- Additional Meta Tags for SEO & Accessibility -->
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#000000" /> <!-- Mobile browser theme color -->
+    <meta name="canonical" href="https://yourwebsite.com/" /> <!-- Canonical URL -->
+    
+    <!-- Charset for better support of special characters -->
+    <meta charset="UTF-8" />
+    
+    <!-- HTML5 Specific Meta Tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- Disable Text Selection (CSS) -->
+    <style>
+      body {
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none;    /* Firefox */
+        -ms-user-select: none;     /* Internet Explorer */
+        user-select: none;         /* Standard syntax */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Disable right-click
+      document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+      // Disable key combinations like Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+      document.addEventListener("keydown", (e) => {
+        if (e.ctrlKey && (e.key === "u" || e.key === "U")) {
+          e.preventDefault();
+        }
+        if (e.ctrlKey && e.shiftKey && (e.key === "i" || e.key === "I")) {
+          e.preventDefault();
+        }
+        if (e.ctrlKey && e.shiftKey && (e.key === "j" || e.key === "J")) {
+          e.preventDefault();
+        }
+        if (e.key === "F12") {
+          e.preventDefault();
+        }
+      });
+
+      // Disable text dragging
+      document.addEventListener("dragstart", (e) => e.preventDefault());
+    </script>
+  </body>
+</html>
