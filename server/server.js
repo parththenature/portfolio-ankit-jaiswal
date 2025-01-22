@@ -13,7 +13,7 @@ const _dirname = path.resolve()
 
 // Enable CORS or handling cors policies
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://portfolio-ankit-jaiswal.onrender.com/",
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD"],
   // allowedHeaders: ["Content-Type", "Authorization"],
   // optionsSuccessStatus: 200, 
