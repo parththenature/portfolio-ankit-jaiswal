@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
   const authorizationToken = `Bearer ${token}`;
 
-  const API = import.meta.env.VITE_APP_URI_API;
+  // const API = import.meta.env.VITE_APP_URI_API;
 
   const [isLogged, setIsLoggedIn] = useState(
     !!localStorage.getItem("authToken") // Check if token exists
@@ -45,12 +45,15 @@ export const AuthProvider = ({ children }) => {
   const userAuthentication = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch(`${API}/api/auth/user`, {
-        method: "GET",
-        headers: {
-          Authorization: authorizationToken,
-        },
-      });
+      const response = await fetch(
+        `https://portfolio-ankit-jaiswal.onrender.com/api/auth/user`,
+        {
+          method: "GET",
+          headers: {
+            Authorization: authorizationToken,
+          },
+        }
+      );
       if (response.ok) {
         const data = await response.json();
         console.log("User data:", data.userData);
@@ -91,7 +94,7 @@ export const AuthProvider = ({ children }) => {
         authorizationToken,
         isLoading,
         userAuthentication,
-        API
+        // API,
       }}
     >
       {children}

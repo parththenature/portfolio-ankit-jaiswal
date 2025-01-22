@@ -6,17 +6,20 @@ import { Table, Button, Container, Card, Spinner } from "react-bootstrap";
 export const AdminContacts = () => {
   const [contactData, setContactData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const { authorizationToken, API } = useAuth();
+  const { authorizationToken } = useAuth();
 
   const getContactsData = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch(`${API}/api/admin/contacts`, {
-        method: "GET",
-        headers: {
-          Authorization: authorizationToken,
-        },
-      });
+      const response = await fetch(
+        `https://portfolio-ankit-jaiswal.onrender.com/api/admin/contacts`,
+        {
+          method: "GET",
+          headers: {
+            Authorization: authorizationToken,
+          },
+        }
+      );
       const data = await response.json();
 
       if (response.ok) {
@@ -34,12 +37,15 @@ export const AdminContacts = () => {
 
   const deleteContactById = async (id) => {
     try {
-      const response = await fetch(`${API}/api/admin/contacts/delete/${id}`, {
-        method: "DELETE",
-        headers: {
-          Authorization: authorizationToken,
-        },
-      });
+      const response = await fetch(
+        `https://portfolio-ankit-jaiswal.onrender.com/api/admin/contacts/delete/${id}`,
+        {
+          method: "DELETE",
+          headers: {
+            Authorization: authorizationToken,
+          },
+        }
+      );
       if (response.ok) {
         toast.success("Message deleted successfully");
         getContactsData();

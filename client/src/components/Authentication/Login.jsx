@@ -11,7 +11,7 @@ export const Login = () => {
   });
 
   const navigate = useNavigate();
-  const { storeTokenInLocalStorage, userAuthentication, API } = useAuth();
+  const { storeTokenInLocalStorage, userAuthentication } = useAuth();
 
   const handleInput = (e) => {
     let name = e.target.name;
@@ -28,13 +28,16 @@ export const Login = () => {
     console.log(user);
 
     try {
-      const response = await fetch(`${API}/api/auth/login`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(user),
-      });
+      const response = await fetch(
+        `https://portfolio-ankit-jaiswal.onrender.com/api/auth/login`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(user),
+        }
+      );
       const res_data = await response.json();
       console.log("From login", res_data.extraDetails);
 
@@ -122,7 +125,10 @@ export const Login = () => {
                       Login
                     </button>
                   </div>
-                  <p style={{marginTop:'1.5rem'}}>If you are a new user, please register first to create your account</p>
+                  <p style={{ marginTop: "1.5rem" }}>
+                    If you are a new user, please register first to create your
+                    account
+                  </p>
                   <div className="text-center" style={{ marginTop: "1rem" }}>
                     <Link to="/register">
                       <button

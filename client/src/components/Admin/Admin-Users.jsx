@@ -7,12 +7,12 @@ import { Table, Button, Container, Card, Spinner } from "react-bootstrap";
 export const AdminUsers = () => {
   const [users, setUsers] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const { authorizationToken, API } = useAuth();
+  const { authorizationToken } = useAuth();
 
   const getAllUsersData = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch(`${API}/api/admin/users`, {
+      const response = await fetch(`https://portfolio-ankit-jaiswal.onrender.com/api/admin/users`, {
         method: "GET",
         headers: {
           Authorization: authorizationToken,
@@ -30,7 +30,7 @@ export const AdminUsers = () => {
 
   const deleteUser = async (id) => {
     try {
-      const response = await fetch(`${API}/api/admin/users/delete/${id}`, {
+      const response = await fetch(`https://portfolio-ankit-jaiswal.onrender.com/api/admin/users/delete/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: authorizationToken,

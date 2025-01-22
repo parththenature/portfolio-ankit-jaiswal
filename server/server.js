@@ -13,7 +13,7 @@ const _dirname = path.resolve()
 
 // Enable CORS or handling cors policies
 const corsOptions = {
-  origin: "https://portfolio-ankit-jaiswal.onrender.com/",
+  origin: "https://portfolio-ankit-jaiswal.onrender.com",
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD"],
   // allowedHeaders: ["Content-Type", "Authorization"],
   // optionsSuccessStatus: 200, 

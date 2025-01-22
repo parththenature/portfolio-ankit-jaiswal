@@ -11,12 +11,12 @@ export const AdminUpdate = () => {
   });
 
   const params = useParams();
-  const { authorizationToken, API } = useAuth();
+  const { authorizationToken } = useAuth();
 
   // Fetch single user data
   const getSingleUserData = async () => {
     try {
-      const response = await fetch(`${API}/api/admin/users/${params.id}`, {
+      const response = await fetch(`https://portfolio-ankit-jaiswal.onrender.com/api/admin/users/${params.id}`, {
         method: "GET",
         headers: {
           Authorization: authorizationToken,
@@ -46,7 +46,7 @@ export const AdminUpdate = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        `${API}/api/admin/users/update/${params.id}`,
+        `https://portfolio-ankit-jaiswal.onrender.com/api/admin/users/update/${params.id}`,
         {
           method: "PATCH",
           headers: {

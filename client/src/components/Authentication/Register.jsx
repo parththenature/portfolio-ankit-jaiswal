@@ -13,7 +13,7 @@ export const Register = () => {
   });
 
   const navigate = useNavigate();
-  const { storeTokenInLocalStorage, API } = useAuth();
+  const { storeTokenInLocalStorage } = useAuth();
 
   // handling the input values
   const handleInput = (e) => {
@@ -33,7 +33,7 @@ export const Register = () => {
     console.log(user);
 
     try {
-      const response = await fetch(`${API}/api/auth/register`, {
+      const response = await fetch(`https://portfolio-ankit-jaiswal.onrender.com/api/auth/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

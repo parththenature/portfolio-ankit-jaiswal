@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 
 export const Contact = () => {
   const [userData, setUserData] = useState(true);
-  const { user, API } = useAuth();
+  const { user } = useAuth();
   const defaultContactFormData = {
     username: user ? user.username : "",
     email: user ? user.email : "",
@@ -42,13 +42,16 @@ export const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`${API}/api/form/contact`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(contact),
-      });
+      const response = await fetch(
+        `https://portfolio-ankit-jaiswal.onrender.com/api/form/contact`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(contact),
+        }
+      );
       if (response.ok) {
         console.log("Before Reset:", contact);
         setContact(defaultContactFormData);
