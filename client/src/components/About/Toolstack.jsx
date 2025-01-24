@@ -1,6 +1,7 @@
 import { Col, Row } from "react-bootstrap";
 import {
   SiPostman,
+  SiVisualstudiocode,
   SiGit,
   SiGithub,
   SiNpm
@@ -13,8 +14,7 @@ function Toolstack() {
         <SiNpm />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        {/* Replace with an image or another icon */}
-        <SiPostman />
+        <SiVisualstudiocode />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostman />
