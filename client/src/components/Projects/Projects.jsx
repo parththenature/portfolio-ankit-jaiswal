@@ -34,8 +34,8 @@ function Projects() {
               isBlog={false}
               title="Portfolio"
               description="My personal Portfolio website built with React and styled using modern UI frameworks. It showcases my skills, projects, and experience, offering an interactive and user-friendly interface for potential clients and employers."
-              ghLink="https://github.com/parththenature/Portfolio"
-              demoLink="https://portfolio/ankit-jaiswal/parth"
+              ghLink="https://github.com/parththenature/portfolio-ankit-jaiswal"
+              demoLink="https://portfolio-ankit-jaiswal.onrender.com/"
             />
           </Col>
 

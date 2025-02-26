@@ -25,8 +25,10 @@ ChartJS.register(
 export const DashboardContent = () => {
   const cardStyle = {
     backgroundColor: "rgba(255, 255, 255, 0.1)",
+
   };
   const cardTextColor = { color: "#fff" };
+  
   const titleStyle = { color: "#c770f0" };
 
   // Data for the graph
