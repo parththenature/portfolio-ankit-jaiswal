@@ -4,7 +4,7 @@ import Particle from "../Particle";
 import EduTech from "../../Assets/Projects/EduTech.png";
 import Portfolio from "../../Assets/Projects/Portfolio.png";
 // import ECommerce from "../../Assets/Projects/ECommerce.png";
-import Casino from "../../Assets/Projects/Casino.png"
+import Casino from "../../Assets/Projects/casino.png"
 
 function Projects() {
   return (
