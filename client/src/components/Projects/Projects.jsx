@@ -44,7 +44,7 @@ function Projects() {
             <ProjectCard
               imgPath={Casino}
               isBlog={false}
-              title="ECommerce"
+              title="Casino"
               description="A dynamic casino betting website developed using the MERN stack, featuring a wide range of interactive games and real-time score updates. Designed with an intuitive interface to deliver a smooth and engaging user experience for gaming enthusiasts."
               ghLink="https://github.com/parththenature/casino"
               demoLink="https://casino/ankit-jaiswal"
