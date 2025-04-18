@@ -51,6 +51,7 @@ function AppContent() {
             <AuthRedirect>
               <Login />
             </AuthRedirect>
+            
           }
         />
         <Route path="/contact" element={<Contact />} />

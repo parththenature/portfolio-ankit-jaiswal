@@ -3,7 +3,8 @@ import ProjectCard from "./ProjectsCard";
 import Particle from "../Particle";
 import EduTech from "../../Assets/Projects/EduTech.png";
 import Portfolio from "../../Assets/Projects/Portfolio.png";
-import ECommerce from "../../Assets/Projects/ECommerce.png";
+// import ECommerce from "../../Assets/Projects/ECommerce.png";
+import Casino from "../../Assets/Projects/Casino.png"
 
 function Projects() {
   return (
@@ -41,12 +42,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={ECommerce}
+              imgPath={Casino}
               isBlog={false}
               title="ECommerce"
-              description="An E-commerce website built with the MERN stack, offering a seamless shopping experience with product management, user authentication, and a responsive design for smooth online shopping."
-              ghLink="https://github.com/parththenature/ecommerce.io"
-              demoLink="https://ecommerce/ankit-jaiswal"
+              description="A dynamic casino betting website developed using the MERN stack, featuring a wide range of interactive games and real-time score updates. Designed with an intuitive interface to deliver a smooth and engaging user experience for gaming enthusiasts."
+              ghLink="https://github.com/parththenature/casino"
+              demoLink="https://casino/ankit-jaiswal"
             />
           </Col>
         </Row>
