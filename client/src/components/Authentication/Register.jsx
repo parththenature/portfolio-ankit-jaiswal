@@ -33,13 +33,16 @@ export const Register = () => {
     console.log(user);
 
     try {
-      const response = await fetch(`https://portfolio-ankit-jaiswal.onrender.com/api/auth/register`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(user),
-      });
+      const response = await fetch(
+        `https://portfolio-ankit-jaiswal.onrender.com/api/auth/register`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(user),
+        }
+      );
       const res_data = await response.json();
       console.log("Response from server", res_data.extraDetails);
 
@@ -154,23 +157,19 @@ export const Register = () => {
                       Register
                     </button>
                   </div>
-                  <p style={{marginTop:'1.5rem'}}>Already have an account? Please login here.</p>
-                  <div className="text-center" style={{ marginTop: "1rem" }}>
-                    <Link to="/login">
-                      <button
-                        type="button"
-                        className="btn btn-primary px-4 py-2"
-                        style={{
-                          background: "rgba(255, 255, 255, 0.1)",
-                          border: "1px solid rgba(255, 255, 255, 0.2)",
-                          width: "auto",
-                          minWidth: "150px",
-                        }}
-                      >
-                        Login
-                      </button>
+                  <p style={{ marginTop: "1.5rem", textAlign: "center" }}>
+                    Already have an account?{" "}
+                    <Link
+                      to="/login"
+                      style={{
+                        color: "#c95bf5", // Bootstrap blue
+                        textDecoration: "none",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      Login
                     </Link>
-                  </div>
+                  </p>
                 </form>
               </div>
             </div>

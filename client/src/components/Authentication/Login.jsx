@@ -103,6 +103,7 @@ export const Login = () => {
                     <label className="mb-2">Password</label>
                     <input
                       type="password"
+                      placeholder="Enter Password"
                       className="form-control"
                       name="password"
                       value={user.password}
@@ -125,25 +126,19 @@ export const Login = () => {
                       Login
                     </button>
                   </div>
-                  <p style={{ marginTop: "1.5rem" }}>
-                    Don&apos;t have an account? Create a new one now!
-                  </p>
-                  <div className="text-center" style={{ marginTop: "1rem" }}>
-                    <Link to="/register">
-                      <button
-                        type="button"
-                        className="btn btn-primary px-4 py-2"
-                        style={{
-                          background: "rgba(255, 255, 255, 0.1)",
-                          border: "1px solid rgba(255, 255, 255, 0.2)",
-                          width: "auto",
-                          minWidth: "150px",
-                        }}
-                      >
-                        Register
-                      </button>
+                  <p style={{ marginTop: "1.5rem", textAlign: "center" }}>
+                    Don&apos;t have an account?{" "}
+                    <Link
+                      to="/register"
+                      style={{
+                        color: "#c95bf5", // Bootstrap blue
+                        textDecoration: "none",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      Register
                     </Link>
-                  </div>
+                  </p>
                 </form>
               </div>
             </div>
