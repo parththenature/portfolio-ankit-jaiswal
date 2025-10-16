@@ -126,8 +126,7 @@ export const Login = () => {
                     </button>
                   </div>
                   <p style={{ marginTop: "1.5rem" }}>
-                    If you are a new user, please register first to create your
-                    account
+                    Don&apos;t have an account? Create a new one now!
                   </p>
                   <div className="text-center" style={{ marginTop: "1rem" }}>
                     <Link to="/register">

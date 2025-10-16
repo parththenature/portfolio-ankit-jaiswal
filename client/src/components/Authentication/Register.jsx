@@ -154,7 +154,7 @@ export const Register = () => {
                       Register
                     </button>
                   </div>
-                  <p style={{marginTop:'1.5rem'}}>If you are already registered, please log in to access your account </p>
+                  <p style={{marginTop:'1.5rem'}}>Already have an account? Please login here.</p>
                   <div className="text-center" style={{ marginTop: "1rem" }}>
                     <Link to="/login">
                       <button
